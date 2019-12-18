@@ -13,4 +13,6 @@ host: localhost
 port: {porta definida}
 userName: postgres
 password: {senha definida}
+
+* Criar database: gobarber, sem template, encoding = UTF-8
 ```
