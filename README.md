@@ -1,5 +1,11 @@
 # gobarber
 
+## Executar a aplicação
+```
+Desenvolvimento: yarn dev
+Debug: yarn dev:debug
+```
+
 ## Container Database
 ```
 Executar:
