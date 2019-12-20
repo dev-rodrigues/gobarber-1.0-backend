@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
-    "eslint": "^6.7.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2",
+    "nodemon": "^1.19.3",
     "sucrase": "^3.10.1"
   }
 }
