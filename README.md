@@ -1,5 +1,14 @@
 # gobarber
 
+## IDE e Plugins
+```
+Recomendo a utilização do editor VSCode
+https://code.visualstudio.com/
+
+Instalar pluguin:
+ESLint
+```
+
 ## Executar a aplicação
 ```
 Desenvolvimento: yarn dev
