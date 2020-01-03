@@ -45,3 +45,9 @@ Renomear o arquivo database.exemple.js
 localizado em src/config/database.exemple.js para database.js.
 Alterar os campos pertinentes
 ```
+
+## Executar Migrations
+```
+Dentro da pasta da aplicação executar o comando:
+yarn sequelize db:migrate
+```
