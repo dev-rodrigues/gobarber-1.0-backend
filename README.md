@@ -9,6 +9,13 @@ Instalar pluguin:
 ESLint
 ```
 
+## YARN e CHOCOLATEY
+```
+Instalar as ferramentas yarn e chocolatey
+https://chocolatey.org/
+https://yarnpkg.com/lang/en/
+```
+
 ## Executar a aplicação
 ```
 Desenvolvimento: yarn dev
