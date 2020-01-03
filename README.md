@@ -38,3 +38,10 @@ Name = gobarber
 Template = sem template
 Encoding = UTF-8
 ```
+
+## Configuracao de conexao do projeto
+```
+Renomear o arquivo database.exemple.js localizado em src/config/database.exemple.js
+para database.js.
+Alterar os campos pertinentes
+```
