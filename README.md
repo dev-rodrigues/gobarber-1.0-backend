@@ -7,6 +7,7 @@ https://code.visualstudio.com/
 
 Instalar pluguin:
 ESLint
+TODO Highlight
 ```
 
 ## YARN e CHOCOLATEY
