@@ -1,9 +1,12 @@
 import User from '../models/User';
 
 class UserController {
+    /**
+     *  TODO:
+     *  CRIAR MIDDLE PARA VALIDAR EXISTENCIA DO USUARIO E TORNAR O METODO
+     *  STORE MAIS ENXUTO
+     */
     async store(req, res) {
-        // TODO
-        // Criar middle para validar existencia do usuario
         const user_exists = await User.findOne({
             where: {
                 email: req.body.email
