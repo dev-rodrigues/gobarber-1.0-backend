@@ -3,7 +3,7 @@ import User from '../models/User';
 class UserController {
     /**
      *  TODO:
-     *  CRIAR MIDDLE PARA VALIDAR EXISTENCIA DO USUARIO E TORNAR O METODO
+     *  CRIAR MIDDLEWARE PARA VALIDAR EXISTENCIA DO USUARIO E TORNAR O METODO
      *  STORE MAIS ENXUTO
      */
     async store(req, res) {
