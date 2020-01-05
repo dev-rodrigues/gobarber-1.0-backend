@@ -2,24 +2,7 @@ import * as Yup from 'yup';
 import User from '../models/User';
 
 class UserController {
-    /**
-     * TODO:
-     * CRIAR MIDDLEWARE PARA VALIDAR INPUT DO USUARIO
-     */
     async store(req, res) {
-        const schema = Yup.object({
-            name: Yup.string().required(),
-            email: Yup.string().required(),
-            password: Yup.string()
-                .required()
-                .min(6)
-                .max(12)
-        });
-
-        if (!(await schema.isValid(req.body))) {
-            return res.status(400).json({ error: 'Validation fail.' });
-        }
-
         const { id, name, email, provider } = await User.create(req.body);
 
         return res.json({
