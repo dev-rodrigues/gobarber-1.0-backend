@@ -47,14 +47,14 @@ Template = sem template
 Encoding = UTF-8
 ```
 
-## Configuracao de conexao do projeto
+## Configuracao de conexao com o banco de dados do projeto
 ```
 Renomear o arquivo database.exemple.js
 localizado em src/config/database.example.js para database.js.
 Alterar os campos pertinentes
 ```
 
-## Configuracao de autenticacao do projeto
+## Configuracao de autenticacao do usuario
 ```
 Renomear o arquivo auth.example.js para auth.js
 Alterar os campos pertinentes
