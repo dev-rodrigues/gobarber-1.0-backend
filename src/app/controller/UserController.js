@@ -26,7 +26,12 @@ class UserController {
         });
     }
 
+    /**
+     * TODO:
+     * Verificar se novo email está sendo utilizado
+     */
     async update(req, res) {
+        // dados básicos
         const { email, oldPassword } = req.body;
 
         const user = await User.findByPk(req.userId);
@@ -39,6 +44,7 @@ class UserController {
             }
         }
 
+        // dados opcionais
         if (oldPassword && !(await user.checkPassword(oldPassword))) {
             return res.status(400).json({ error: 'Password does not match' });
         }
