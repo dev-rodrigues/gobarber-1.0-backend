@@ -16,6 +16,7 @@ routes.post(
     user_exists,
     UserController.store
 );
+
 routes.post('/session', valid_session, SessionController.store);
 
 routes.put('/users', authMiddleware, UserController.update);
