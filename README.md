@@ -50,7 +50,13 @@ Encoding = UTF-8
 ## Configuracao de conexao do projeto
 ```
 Renomear o arquivo database.exemple.js
-localizado em src/config/database.exemple.js para database.js.
+localizado em src/config/database.example.js para database.js.
+Alterar os campos pertinentes
+```
+
+## Configuracao de autenticacao do projeto
+```
+Renomear o arquivo auth.example.js para auth.js
 Alterar os campos pertinentes
 ```
 

@@ -99,3 +99,4 @@ public/
 
 # configuracao database
 src/config/database.js
+src/config/auth.js
