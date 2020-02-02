@@ -101,4 +101,4 @@ public/
 src/config/database.js
 src/config/auth.js
 
-tmp\uploads
+tmp/uploads
