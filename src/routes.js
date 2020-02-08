@@ -12,6 +12,7 @@ import authMiddleware from './app/middlewares/auth';
 import user_exists from './app/middlewares/verifyIfUserExists';
 import user_valid_for_creation from './app/middlewares/validUserForCreation';
 import valid_session from './app/middlewares/validCreateSession';
+import valid_appointment from './app/middlewares/validAppointment';
 import valid_userId_for_appointment from './app/middlewares/validUserForAppointment';
 
 const routes = new Router();
@@ -34,8 +35,12 @@ routes.get('/providers', authMiddleware, ProviderController.index);
 
 routes.post(
     '/appointment',
+    authMiddleware,
+    valid_appointment,
     valid_userId_for_appointment,
     AppointmentController.store
 );
+
+routes.get('/appointment', authMiddleware, AppointmentController.index);
 
 export default routes;
