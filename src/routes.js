@@ -7,6 +7,7 @@ import SessionController from './app/controller/SessionController';
 import FileController from './app/controller/FileController';
 import ProviderController from './app/controller/ProviderController';
 import AppointmentController from './app/controller/AppointmentController';
+import ScheduleController from './app/controller/ScheduleController';
 
 import authMiddleware from './app/middlewares/auth';
 import user_exists from './app/middlewares/verifyIfUserExists';
@@ -14,6 +15,7 @@ import user_valid_for_creation from './app/middlewares/validUserForCreation';
 import valid_session from './app/middlewares/validCreateSession';
 import valid_appointment from './app/middlewares/validAppointment';
 import valid_userId_for_appointment from './app/middlewares/validUserForAppointment';
+import userProvider from './app/middlewares/userProvider';
 
 const routes = new Router();
 const upload = multer(multerConfig);
@@ -42,5 +44,7 @@ routes.post(
 );
 
 routes.get('/appointment', authMiddleware, AppointmentController.index);
+
+routes.get('/schedule', authMiddleware, userProvider, ScheduleController.index);
 
 export default routes;
