@@ -102,6 +102,7 @@ class AppointmentController {
         return res.json({ appointment });
     }
 
+    // eslint-disable-next-line consistent-return
     async delete(req, res) {
         const appointment = await Appointment.findByPk(req.params.id);
 
