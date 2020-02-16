@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "dev:debug": "nodemon --inspect src/server.js",
-    "sonar": "node sonar-project.js"
+    "sonar": "node sonar-project.js",
+    "queue" : "nodemon src/queue.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
