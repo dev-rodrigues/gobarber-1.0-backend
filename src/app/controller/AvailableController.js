@@ -1,11 +1,9 @@
 import {
     startOfDay,
     endOfDay,
-    startOfToday,
     setHours,
     setMinutes,
     setSeconds,
-    setDate,
     format,
     isAfter
 } from 'date-fns';
