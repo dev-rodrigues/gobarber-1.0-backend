@@ -18,7 +18,7 @@ class UserController {
         const user = await User.findByPk(req.userId);
 
         if (email !== user.email) {
-            const user_exists = await User.findOneee({ where: { email } });
+            const user_exists = await User.findOne({ where: { email } });
 
             if (user_exists) {
                 return res.status(400).json({ error: 'User already existis' });
