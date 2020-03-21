@@ -102,5 +102,6 @@ src/config/database.js
 src/config/auth.js
 src/config/mail.js
 src/config/redis.js
+src/config/sentry.js
 
 tmp/uploads
