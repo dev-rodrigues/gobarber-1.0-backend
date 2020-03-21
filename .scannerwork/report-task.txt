@@ -2,5 +2,5 @@ projectKey=gobarber
 serverUrl=http://localhost:9000
 serverVersion=7.9.2.30863
 dashboardUrl=http://localhost:9000/dashboard?id=gobarber
-ceTaskId=AXBLPC5k7zJQbLXR4fey
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXBLPC5k7zJQbLXR4fey
+ceTaskId=AXCiAf8gcljfsFp7qqAG
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXCiAf8gcljfsFp7qqAG
