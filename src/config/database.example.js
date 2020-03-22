@@ -1,12 +1,12 @@
+require('dotenv').config();
+// O sequelize da suporte aos bancos de dados: MYSQL, MARIADB, SQLITE E SQLSERVER
+// instalar as dependencias pertinentes ao banco escolhido
+// documentacao: https://sequelize.org/v5/manual/dialects.html
 module.exports = {
-    // O sequelize da suporte aos bancos de dados: MYSQL, MARIADB, SQLITE E SQLSERVER
-    // instalar as dependencias pertinentes ao banco escolhido
-    // documentacao: https://sequelize.org/v5/manual/dialects.html
-    dialect: 'postgres',
-    host: 'COLOQUE-AQUI-O-HOST',
-    username: 'COLOQUE-AQUI-O-USERNAME',
-    password: 'COLOQUE-AQUI-A-SENHA',
-    database: 'gobarber',
+    host: process.env.DB_HOST,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.NAME,
     define: {
         timestamps: true,
         underscored: true,
